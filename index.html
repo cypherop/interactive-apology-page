@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I'm Really Sorry ❤️</title>
+    <title>I'm Really Sorry 😔</title>
     <style>
         * {
             margin: 0;
@@ -262,17 +262,16 @@
 </head>
 <body>
     <!-- Background floating hearts -->
-    <div class="bg-heart" style="top: 10%; left: 10%; animation-delay: 0s;">❤️</div>
     <div class="bg-heart" style="top: 70%; left: 80%; animation-delay: 2s;">💖</div>
     <div class="bg-heart" style="top: 30%; left: 85%; animation-delay: 4s;">💕</div>
     <div class="bg-heart" style="top: 60%; left: 15%; animation-delay: 6s;">💗</div>
     <div class="bg-heart" style="top: 20%; left: 50%; animation-delay: 8s;">💝</div>
 
     <div class="container">
-        <div id="mainText">I'm really sorry ❤️<br>Please forgive me 🥺</div>
+        <div id="mainText">I'm really sorry 😔<br>Please forgive me 🥺</div>
         <div class="buttons">
             <button id="yesBtn">Okay, I forgive you 💖</button>
-            <button id="noBtn">No, I'm still hurt 😠</button>
+            <button id="noBtn">No, I'm still hurt 😢</button>
         </div>
         <div id="clickCount"></div>
         <div id="emojiContainer" class="hidden"></div>
@@ -322,7 +321,7 @@
         function createHeart() {
             const heart = document.createElement('div');
             heart.className = 'heart';
-            heart.textContent = ['❤️', '💖', '💕', '💗', '💝', '🥰', '😍'][Math.floor(Math.random() * 7)];
+            heart.textContent = ['💖', '💕', '💗', '💝', '🥰', '😍'][Math.floor(Math.random() * 7)];
             heart.style.left = Math.random() * window.innerWidth + 'px';
             heart.style.top = window.innerHeight + 'px';
             document.body.appendChild(heart);
@@ -410,7 +409,7 @@
                 } else if (noClickCount <= 10) {
                     clickCount.innerHTML = `Please baby! I'm begging you! 😭 (Attempts: ${noClickCount})`;
                 } else {
-                    clickCount.innerHTML = `I can do this all day! 💪❤️ (Attempts: ${noClickCount})`;
+                    clickCount.innerHTML = `I can do this all day! 💪 (Attempts: ${noClickCount})`;
                 }
                 
                 createHeart();
@@ -435,7 +434,7 @@
             } else if (noClickCount <= 10) {
                 clickCount.innerHTML = `Please baby! I'm begging you! 😭 (Attempts: ${noClickCount})`;
             } else {
-                clickCount.innerHTML = `I can do this all day! 💪❤️ (Attempts: ${noClickCount})`;
+                clickCount.innerHTML = `I can do this all day! 💪 (Attempts: ${noClickCount})`;
             }
 
             createHeart();
@@ -444,9 +443,9 @@
         // Handle Yes button click
         yesBtn.addEventListener('click', function() {
             mainText.innerHTML = "Yay! You forgave me! 😍💖🥳";
-            emojiContainer.innerHTML = "😊❤️💃🎉✨🥰💕🌟🎊💖🌹😘";
+            emojiContainer.innerHTML = "😊💃🎉✨🥰💕🌟🎊💖😘";
             emojiContainer.classList.remove('hidden');
-            clickCount.innerHTML = "I LOVE YOU SO MUCH! ❤️❤️❤️";
+            clickCount.innerHTML = "I AM SO GLAD YOU'RE IN MY LIFE!";
             buttonsContainer.style.display = 'none';
 
             for (let i = 0; i < 30; i++) {
